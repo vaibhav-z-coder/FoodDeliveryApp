@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+*/.DS_Store
+
+# Environment files
+backend/.env
+
+# Dependencies and build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
