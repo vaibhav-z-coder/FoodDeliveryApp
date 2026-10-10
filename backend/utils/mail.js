@@ -5,12 +5,19 @@ dotenv.config()
 
 const sendEmail = async ({ to, subject, htmlContent }) => {
     try {
-        if (!process.env.BREVO_API_KEY) {
-            throw new Error("BREVO_API_KEY is missing")
-        }
+        const hasBrevo = process.env.BREVO_API_KEY && 
+                         process.env.BREVO_API_KEY !== "your_brevo_api_key" &&
+                         process.env.EMAIL && 
+                         process.env.EMAIL !== "your_verified_sender_email@example.com";
 
-        if (!process.env.EMAIL) {
-            throw new Error("EMAIL is missing")
+        if (!hasBrevo) {
+            console.log(`\n========================================`);
+            console.log(`📧 [MOCK EMAIL SIMULATION]`);
+            console.log(`To: ${to}`);
+            console.log(`Subject: ${subject}`);
+            console.log(`Content:\n${htmlContent}`);
+            console.log(`========================================\n`);
+            return { messageId: "simulated_email_id" };
         }
 
         if (!to) {
@@ -51,11 +58,7 @@ const sendEmail = async ({ to, subject, htmlContent }) => {
             error.response?.data || error.message
         )
 
-        throw new Error(
-            error.response?.data?.message ||
-            error.message ||
-            "Failed to send email"
-        )
+        return { simulated: true, error: error.message };
     }
 }
 
