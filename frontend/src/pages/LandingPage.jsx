@@ -210,15 +210,14 @@ function LandingPage() {
                         <p className="text-sm text-gray-400">Next-Gen Food Delivery Platform</p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-                        <a href="https://github.com/priyanshuguptacoder/Vingo-Food-Delivery-App" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
-                        <a href="https://www.linkedin.com/in/priyanshu-gupta-b98689376/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-                        <a href="https://vingo-food-delivery-app-1.onrender.com/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Live Demo</a>
+                        <a href="https://github.com/vaibhav-z-coder/FoodDeliveryApp" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+                        <a href="https://github.com/vaibhav-z-coder" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Developer Profile</a>
                     </div>
                 </div>
                 
                 <div className="max-w-6xl mx-auto pt-8 border-t border-gray-800 flex flex-col items-center justify-center text-center">
                     <p className="text-sm text-gray-400 font-medium tracking-wide">
-                        Made with ❤️ by Priyanshu
+                        Made with ❤️ by Vaibhav Singh
                     </p>
                 </div>
             </footer>

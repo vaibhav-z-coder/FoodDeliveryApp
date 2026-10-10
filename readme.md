@@ -9,9 +9,7 @@
 </p>
 
 <p align="center">
-  🚀 <a href="https://vingo-food-delivery-app-1.onrender.com/">Live Frontend</a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  ⚙️ <a href="https://vingo-food-delivery-app-gwsn.onrender.com/">Live Backend</a>
+  🚀 <a href="https://github.com/vaibhav-z-coder/FoodDeliveryApp">GitHub Repository</a>
 </p>
 
 ---
@@ -617,9 +615,9 @@ Use environment variables locally and in Render.
 
 ## Clone
 
-    git clone https://github.com/priyanshuguptacoder/Vingo-Food-Delivery-App.git
+    git clone https://github.com/vaibhav-z-coder/FoodDeliveryApp.git
 
-    cd Vingo-Food-Delivery-App
+    cd FoodDeliveryApp
 
 ## Backend
 

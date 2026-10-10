@@ -2,7 +2,7 @@ import os
 import shutil
 import urllib.request
 
-ARTIFACT_DIR = "/Users/priyanshugupta/.gemini/antigravity/brain/12a917c3-e0f3-437f-90f6-af68bc5fea91/"
+ARTIFACT_DIR = "./"
 FOOD_DIR = "frontend/src/assets/food/"
 
 # Mapping the generated images to their category destinations
